@@ -8,6 +8,7 @@ import math
 class Shape:
     def __init__(self, objType):
         self.objType = objType
+        return
     def printType(self):
         print(self.objType)
 
@@ -17,6 +18,7 @@ class Rect(Shape):
         Shape.__init__(self, objType)
         self.height = height
         self.width = width
+        return
     def calcArea(self):
         area = self.width * self.height
         return area
@@ -26,6 +28,7 @@ class Circle(Shape):
      def __init__(self, radius, objType):
         Shape.__init__(self, objType)
         self.radius = radius
+        return
      def calcArea(self):
          area = radius * radius * math.pi
          return area
